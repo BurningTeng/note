@@ -109,16 +109,16 @@ gcc提供了编译选项可以为指定架构生成汇编代码，
 ###  开启Hyper-V
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -ALL
 ###  安装服务
-sc.exe create "SmartSign2" binpath="D:\vs2022\Project\WorkerService1\bin\Release\net6.0\WorkerService1.exe"
-sc.exe failure "SmartSign2" reset=0 actions=restart/60000/restart/60000/run/1000
-sc qfailure "SmartSign2"
-sc.exe start "SmartSign2"
+sc.exe create "SmartSign2" binpath="D:\vs2022\Project\WorkerService1\bin\Release\net6.0\WorkerService1.exe"  
+sc.exe failure "SmartSign2" reset=0 actions=restart/60000/restart/60000/run/1000  
+sc qfailure "SmartSign2"  
+sc.exe start "SmartSign2"  
 ###  配置文件的路径
-Application: WorkerService1.exe
-CoreCLR Version: 6.0.322.12309
-.NET Version: 6.0.3
-Description: The process was terminated due to an unhandled exception.
-Exception Info: System.IO.FileNotFoundException: Could not find file 'C:\WINDOWS\system32\PersonInfo.json'。否则会出错
+Application: WorkerService1.exe  
+CoreCLR Version: 6.0.322.12309  
+.NET Version: 6.0.3  
+Description: The process was terminated due to an unhandled exception.  
+Exception Info: System.IO.FileNotFoundException: Could not find file 'C:\WINDOWS\system32\PersonInfo.json'。否则会出错  
 #### epoll_wait
 事件驱动?
 ```cpp
@@ -174,4 +174,13 @@ int epoll_wait(int epfd, struct epoll_event * events, int maxevents, int timeout
 第3个参数 maxevents表示本次可以返回的最大事件数目，通常 maxevents参数与预分配的events数组的大小是相等的。
 
 第4个参数 timeout表示在没有检测到事件发生时最多等待的时间（单位为毫秒），如果 timeout为0，则表示 epoll_wait在 rdllist链表中为空，立刻返回，不会等待。
+### powershell
+```powershell
 
+IEX (New-Object Net.WebClient).DownloadString('#{remote_script}'); 
+```
+ 该命令将#{remote_script}**加载到内存**，并没有把该脚本下载到本地。
+ 
+```shell
+  powershell -Command "iwr -useb  https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | iex"
+```
