@@ -89,16 +89,16 @@ AND是按位“与”操作道，当且仅当两操作数对应位都为“1”�
 
 
 ### 汇编
-CMP该指令与SUB指令一样执行减法的操作，但它并不保存运算结果，只是根据结果设置相关的条件标志位（SF、ZF、CF、OF）。CMP指令后往往跟着条件转移指令，实现根据比较的结果产生不同的程序分支的功能。
-JAE是为高于等于/不低于的转移指令。
-leave指令的作用：
-在32位汇编下相当于:
-mov esp,ebp;//将ebp指向（ebp内部应当保存一个地址，所谓指向即这个地址对应的空间）的值赋给esp
-pop ebp 
+CMP该指令与SUB指令一样执行减法的操作，但它并不保存运算结果，只是根据结果设置相关的条件标志位（SF、ZF、CF、OF）。CMP指令后往往跟着条件转移指令，实现根据比较的结果产生不同的程序分支的功能。  
+JAE是为高于等于/不低于的转移指令。  
+leave指令的作用：  
+在32位汇编下相当于:  
+mov esp,ebp;//将ebp指向（ebp内部应当保存一个地址，所谓指向即这个地址对应的空间）的值赋给esp  
+pop ebp   
 
 
 
-gcc提供了编译选项可以为指定架构生成汇编代码，
+gcc提供了编译选项可以为指定架构生成汇编代码，  
 
 比如 linux下 
 
@@ -114,10 +114,10 @@ sc.exe failure "SmartSign2" reset=0 actions=restart/60000/restart/60000/run/1000
 sc qfailure "SmartSign2"  
 sc.exe start "SmartSign2"  
 ###  配置文件的路径
-Application: WorkerService1.exe  
-CoreCLR Version: 6.0.322.12309  
-.NET Version: 6.0.3  
-Description: The process was terminated due to an unhandled exception.  
+Application: WorkerService1.exe    
+CoreCLR Version: 6.0.322.12309   
+.NET Version: 6.0.3     
+Description: The process was terminated due to an unhandled exception.     
 Exception Info: System.IO.FileNotFoundException: Could not find file 'C:\WINDOWS\system32\PersonInfo.json'。否则会出错  
 #### epoll_wait
 事件驱动?
@@ -184,3 +184,9 @@ IEX (New-Object Net.WebClient).DownloadString('#{remote_script}');
 ```shell
   powershell -Command "iwr -useb  https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | iex"
 ```
+### YAML
+YAML（/ˈjæməl/，尾音类似camel骆驼）是一个可读性高，用来表达数据序列化的格式。
+### HDC
+hdc file recv  data/accounts/account_0/appdata/com.ohos.ohostestapp/database/db/MsdpStub.db
+### master编译需要修改内容
+~/master/0413/openharmony/productdefine/common/products/rk3568.json
