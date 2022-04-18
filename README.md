@@ -1,5 +1,6 @@
 ### word
-
+denote 表示  
+indicator 指示器
 ###  r2frida
 .art格式
 frida script destroyed
@@ -189,4 +190,7 @@ YAML（/ˈjæməl/，尾音类似camel骆驼）是一个可读性高，用来表
 ### HDC
 hdc file recv  data/accounts/account_0/appdata/com.ohos.ohostestapp/database/db/MsdpStub.db
 ### master编译需要修改内容
-~/master/0413/openharmony/productdefine/common/products/rk3568.json
+~/master/0413/openharmony/productdefine/common/products/rk3568.json。  
+提交代码只能往std上面提交。
+### 网络
+ping （Packet Internet Groper）是一种因特网包探索器，用于测试网络连接量的程序 [1]  。Ping是工作在 TCP/IP网络体系结构中**应用层**的一个服务命令， 主要是向特定的目的**主机发送 ICMP（Internet Control Message Protocol 因特网报文控制协议）Echo 请求报文**，测试目的站是否可达及了解其有关状态 [2]  
