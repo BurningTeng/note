@@ -1,8 +1,10 @@
 ### word
 denote 表示  
-indicator 指示器
+indicator 指示器  
+disambiguation 澄清  
+toggle 切换
 ###  r2frida
-.art格式
+.art格式  
 frida script destroyed
 
 When reading 4 bytes from address 8 on android9/10 when attaching to a 32bit process (com.android.chrome or zygote) the process dies.
