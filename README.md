@@ -196,3 +196,6 @@ hdc file recv  data/accounts/account_0/appdata/com.ohos.ohostestapp/database/db/
 提交代码只能往std上面提交。
 ### 网络
 ping （Packet Internet Groper）是一种因特网包探索器，用于测试网络连接量的程序 [1]  。Ping是工作在 TCP/IP网络体系结构中**应用层**的一个服务命令， 主要是向特定的目的**主机发送 ICMP（Internet Control Message Protocol 因特网报文控制协议）Echo 请求报文**，测试目的站是否可达及了解其有关状态 [2]  
+
+### MSDP 编译
+"msdp:device_status":{}, "msdp:movement":{}, "msdp:motion":{}, "msdp:geofence":{}, "msdp:timeline":{}, "msdp:spatial_awareness":{}, 
