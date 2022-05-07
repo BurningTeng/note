@@ -2,7 +2,12 @@
 denote 表示  
 indicator 指示器  
 disambiguation 澄清  
-toggle 切换
+toggle 切换  
+peripheral 外设  
+indicator 指示器  
+granularity  粒度  
+plate 盘子  
+drawback 缺点
 ###  r2frida
 .art格式  
 frida script destroyed
